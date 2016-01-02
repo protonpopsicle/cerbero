@@ -120,6 +120,8 @@ def system_info():
             arch = Architecture.X86_64
         elif arch.endswith('86'):
             arch = Architecture.X86
+        elif 'armv7' in arch:
+            arch = Architecture.ARMv7
         else:
             raise FatalError(_("Architecture %s not supported") % arch)
 

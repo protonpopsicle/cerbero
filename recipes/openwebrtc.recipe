@@ -40,7 +40,7 @@ class Recipe(recipe.Recipe):
     stype = SourceType.GIT
     licenses = [License.BSD_like]
     remotes = {
-        'origin': 'https://github.com/EricssonResearch/openwebrtc.git'
+        'origin': 'https://github.com/protonpopsicle/openwebrtc.git'
     }
     commit = 'origin/master'
     autoreconf = True
@@ -178,7 +178,7 @@ class Recipe(recipe.Recipe):
                 # On OS X, we use a custom config and install everything inside
                 # a framework and not inside the default OS X prefix, so we need
                 # to read that from the config file. See:
-                # https://github.com/EricssonResearch/openwebrtc/wiki/Building-OpenWebRTC-with-Cerbero
+                # https://github.com/protonpopsicle/openwebrtc/wiki/Building-OpenWebRTC-with-Cerbero
                 config = {}
                 parse_file(os.path.join(self.config.environ_dir,
                                         "osx-x86-64.cbc"),
