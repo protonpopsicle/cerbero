@@ -87,7 +87,6 @@ class Recipe(recipe.Recipe):
 
     platform_files_plugins_sys = {
         Platform.LINUX: [
-             'lib/gstreamer-1.0/libgstopengl%(mext)s',
              'lib/gstreamer-1.0/libgstdecklink%(mext)s',
             ],
         Platform.WINDOWS: [

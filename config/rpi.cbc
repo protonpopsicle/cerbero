@@ -7,4 +7,7 @@ prefix = "/opt/openwebrtc-0.3"
 
 target_platform = Platform.LINUX
 target_arch = Architecture.ARMv7
-variants = ['noowr_bridge', 'nox11', 'nogtk3', 'nopulse']
+variants = ['noowr_bridge', 'nox11', 'nogtk3']
+
+#should eq result of $(dpkg-architecture -qDEB_HOST_MULTIARCH) on target (debian)
+arch_specific_libdir = 'arm-linux-gnueabihf'

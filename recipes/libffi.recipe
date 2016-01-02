@@ -23,7 +23,6 @@ class Recipe(recipe.Recipe):
     version = '3.99999'
     autoreconf = True
     remotes = {'origin': 'https://github.com/NativeScript/libffi.git'}
-    # commit = 'bf64a497b4b1da1aae4f14d61761f420ca48cc03'
     commit = 'd1ca0deaaa7e0aeea2bf7dd909af8d7a282f16ff'
     licenses = [License.BSD_like]
 

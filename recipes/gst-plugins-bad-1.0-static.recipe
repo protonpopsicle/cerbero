@@ -74,7 +74,6 @@ class Recipe(custom.GStreamerStatic):
 
     platform_files_plugins_sys_devel = {
         Platform.LINUX: [
-             'libgstopengl',
              'libgstdecklink',
             ],
         Platform.WINDOWS: [
