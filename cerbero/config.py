@@ -93,7 +93,7 @@ class Config (object):
                    'recipes_remotes', 'ios_platform', 'extra_build_tools',
                    'distro_packages_install', 'interactive',
                    'target_arch_flags', 'sysroot', 'isysroot',
-                   'extra_lib_path', 'cached_sources']
+                   'extra_lib_path', 'cached_sources', 'arch_specific_libdir']
 
     def __init__(self):
         self._check_uninstalled()
