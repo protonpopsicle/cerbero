@@ -11,6 +11,3 @@ prefix = "/opt/openwebrtc-0.3"
 # Uncomment this to allow cross-building for another architecture
 # target_arch = Architecture.X86_64
 variants = ['noowr_bridge']
-
-#should eq result of $(dpkg-architecture -qDEB_HOST_MULTIARCH) on target (debian)
-arch_specific_libdir = 'x86_64-linux-gnu'

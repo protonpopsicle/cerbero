@@ -320,7 +320,7 @@ def add_system_libs(config, new_env):
     if config.sysroot:
         sysroot = config.sysroot
 
-    arch_specific_libdir = 'lib/%s-linux-gnu/pkgconfig' % arch
+    arch_specific_libdir = 'lib/%s-linux-gnu' % arch
     if config.arch_specific_libdir:
         arch_specific_libdir = 'lib/%s' % config.arch_specific_libdir
 
@@ -333,11 +333,3 @@ def add_system_libs(config, new_env):
     search_paths = [os.environ.get('ACLOCAL_PATH', ''),
         os.path.join(sysroot, 'usr/share/aclocal')]
     new_env['ACLOCAL_PATH'] = ':'.join(search_paths)
-
-    search_paths = [
-        os.environ.get('GIO_MODULE_DIR'),
-        os.path.join(sysroot, 'usr', '%s/gio/modules' % arch_specific_libdir)]
-    new_env['GIO_MODULE_DIR'] = ':'.join(search_paths)
-    print '**DEBUG**'
-    print 'PKG_CONFIG_PATH is: %s' % new_env['PKG_CONFIG_PATH']
-    print 'GIO_MODULE_DIR is: %s' % new_env['GIO_MODULE_DIR']
